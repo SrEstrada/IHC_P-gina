@@ -1,63 +1,333 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog IHC - Factor Humano</title>
+    <meta name="description" content="Explora el factor humano en IHC: cognición, percepción, memoria y los niveles de conducta interactiva.">
+    <meta name="keywords" content="Factor Humano, Cognición, Memoria, Percepción, IHC, Psicología Cognitiva">
+    <meta name="author" content="Curso IHC">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog IHC - Factor Humano">
+    <meta property="og:description" content="Cognición, percepción y memoria en el diseño de interfaces">
+    <meta property="og:type" content="article">
+    
+    <title>Blog IHC - El Factor Humano y la Conducta Interactiva</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Curso IHC</div>
+    <!-- Navegación -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="logo" aria-label="Logo del curso">Curso IHC</div>
         <ul class="nav-links">
             <li><a href="index.html">Introducción</a></li>
-            <li><a href="factor-humano.html" class="active">Factor Humano</a></li>
+            <li><a href="factor-humano.html" class="active" aria-current="page">Factor Humano</a></li>
             <li><a href="herramientas.html">Herramientas</a></li>
         </ul>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-icon" role="button" aria-label="Menú de navegación" tabindex="0" onclick="toggleMenu()">&#9776;</div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <h1>El Factor Humano y la Conducta Interactiva</h1>
-        <p>Cognición, percepción y memoria en el diseño.</p>
+        <p>Cognición, percepción y memoria: los pilares del diseño centrado en el usuario.</p>
     </header>
 
+    <!-- Contenedor Principal -->
     <div class="container">
+        
+        <!-- Artículo: Niveles de Conducta -->
         <article class="blog-post">
-            <h2>Niveles de Conducta Interactiva</h2>
+            <h2>🧩 Niveles de Conducta Interactiva</h2>
             <p class="meta-data">Publicado el 2 de Diciembre, 2025</p>
             <div class="content">
-                <p>El ser humano es un sistema complejo. Para entender la interacción, analizamos niveles según Cañas y Waern:</p>
-                <ol>
-                    <li><strong>Socio-Cultural:</strong> Influencia de la tecnología en la organización social.</li>
-                    <li><strong>Cooperación:</strong> Tareas donde interactúan varias personas (CSCW).</li>
-                    <li><strong>Cognición Individual:</strong> Procesamiento de información de una sola persona (Memoria, Atención).</li>
-                </ol>
+                <p>
+                    El ser humano es un <strong>sistema complejo y multidimensional</strong>. Para comprender 
+                    cómo interactuamos con la tecnología, necesitamos analizar diferentes niveles de comportamiento. 
+                    Según los investigadores <strong>Cañas y Waern</strong>, podemos identificar tres niveles 
+                    fundamentales:
+                </p>
+                
+                <div style="margin: 2rem 0;">
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px; 
+                                margin-bottom: 1.5rem;
+                                border-left: 5px solid #667eea;">
+                        <h3 style="color: #667eea; margin-bottom: 0.8rem; font-size: 1.3rem;">
+                            🌍 1. Nivel Socio-Cultural
+                        </h3>
+                        <p style="margin: 0;">
+                            <strong>Definición:</strong> Analiza cómo la tecnología influye en la organización social, 
+                            las normas culturales y las estructuras de poder.
+                        </p>
+                        <p style="margin-top: 0.8rem; font-style: italic; color: #666;">
+                            <strong>Ejemplo:</strong> Las redes sociales han transformado la forma en que nos 
+                            comunicamos, compartimos información y nos relacionamos. Han creado nuevas dinámicas 
+                            sociales, como la cultura de los "influencers" o el fenómeno FOMO (Fear of Missing Out).
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px; 
+                                margin-bottom: 1.5rem;
+                                border-left: 5px solid #764ba2;">
+                        <h3 style="color: #764ba2; margin-bottom: 0.8rem; font-size: 1.3rem;">
+                            👥 2. Nivel de Cooperación
+                        </h3>
+                        <p style="margin: 0;">
+                            <strong>Definición:</strong> Se enfoca en las tareas donde múltiples personas interactúan 
+                            simultáneamente con sistemas tecnológicos. Este nivel es estudiado por el campo del 
+                            <strong>CSCW</strong> (Computer-Supported Cooperative Work).
+                        </p>
+                        <p style="margin-top: 0.8rem; font-style: italic; color: #666;">
+                            <strong>Ejemplo:</strong> Herramientas como Google Docs, Slack, Trello o Zoom permiten 
+                            que equipos colaboren en tiempo real, compartiendo documentos, ideas y coordinando 
+                            proyectos sin importar la distancia geográfica.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px;
+                                border-left: 5px solid #3498db;">
+                        <h3 style="color: #3498db; margin-bottom: 0.8rem; font-size: 1.3rem;">
+                            🧠 3. Nivel de Cognición Individual
+                        </h3>
+                        <p style="margin: 0;">
+                            <strong>Definición:</strong> Estudia cómo una sola persona procesa información al 
+                            interactuar con un sistema. Incluye procesos mentales como la memoria, atención, 
+                            percepción y toma de decisiones.
+                        </p>
+                        <p style="margin-top: 0.8rem; font-style: italic; color: #666;">
+                            <strong>Ejemplo:</strong> Cuando navegas por una app de banco, tu cerebro debe recordar 
+                            tu contraseña (memoria), enfocarse en los números de tu cuenta (atención), interpretar 
+                            iconos y botones (percepción), y decidir qué acción tomar (toma de decisiones).
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(231, 76, 60, 0.1); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin-top: 2rem; 
+                            border-left: 4px solid #e74c3c;">
+                    <p style="margin: 0; font-weight: 600; color: #e74c3c;">
+                        ⚡ Dato importante:
+                    </p>
+                    <p style="margin-top: 0.5rem; margin-bottom: 0; color: #555;">
+                        Los tres niveles están <strong>interconectados</strong>. Un buen diseño de IHC debe 
+                        considerar cómo la cognición individual afecta la cooperación grupal, y cómo ambas 
+                        se insertan en un contexto socio-cultural más amplio.
+                    </p>
+                </div>
             </div>
         </article>
 
+        <!-- Artículo: Percepción y Sentidos -->
         <article class="blog-post">
-            <h2>Percepción y Sentidos</h2>
+            <h2>👁️ Percepción y Sentidos Humanos</h2>
             <div class="content">
-                <p>La entrada de información se da a través de los sentidos (sensores):</p>
-                <ul>
-                    <li><strong>Vista:</strong> Principal fuente. Importancia del color, brillo y profundidad.</li>
-                    <li><strong>Oído:</strong> Útil para alertas y feedback sonoro.</li>
-                    <li><strong>Tacto (Háptica):</strong> Crucial en pantallas touch y realidad virtual.</li>
-                </ul>
-                <p>La <strong>memoria humana</strong> se divide en memoria a corto plazo (operativa, 7±2 elementos) y largo plazo.</p>
+                <p>
+                    Toda interacción con un sistema computacional comienza con la <strong>entrada de información</strong> 
+                    a través de nuestros sentidos (sensores biológicos). Comprender cómo funcionan estos sentidos 
+                    es esencial para diseñar interfaces efectivas.
+                </p>
+
+                <h3 style="color: #667eea; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.4rem;">
+                    Los Sentidos en IHC
+                </h3>
+
+                <div class="grid-controls" style="margin-top: 1.5rem;">
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">👁️</h3>
+                        <h3>Vista</h3>
+                        <p><strong>El sentido dominante.</strong> Procesa el 80% de la información que recibimos.</p>
+                        <ul style="text-align: left; margin-top: 1rem; font-size: 0.9rem;">
+                            <li><strong>Color:</strong> Ayuda a categorizar, destacar y guiar la atención.</li>
+                            <li><strong>Brillo:</strong> Contraste para legibilidad y jerarquía visual.</li>
+                            <li><strong>Profundidad:</strong> Ilusión 3D mediante sombras y perspectiva.</li>
+                        </ul>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔊</h3>
+                        <h3>Oído</h3>
+                        <p><strong>Alertas y feedback.</strong> Fundamental para notificaciones y confirmaciones.</p>
+                        <ul style="text-align: left; margin-top: 1rem; font-size: 0.9rem;">
+                            <li><strong>Sonidos:</strong> Notificaciones push, alarmas, clics de confirmación.</li>
+                            <li><strong>Voz:</strong> Asistentes como Siri, Alexa, Google Assistant.</li>
+                            <li><strong>Música:</strong> Crea atmósferas en videojuegos y apps.</li>
+                        </ul>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">✋</h3>
+                        <h3>Tacto (Háptica)</h3>
+                        <p><strong>El futuro de la interacción.</strong> Crítico en touchscreens y realidad virtual.</p>
+                        <ul style="text-align: left; margin-top: 1rem; font-size: 0.9rem;">
+                            <li><strong>Vibración:</strong> Feedback en smartphones y controles de juegos.</li>
+                            <li><strong>Presión:</strong> Pantallas sensibles a la fuerza (3D Touch).</li>
+                            <li><strong>Textura:</strong> Superficies hápticas que simulan materiales.</li>
+                        </ul>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎯</h3>
+                        <h3>Otros Sentidos</h3>
+                        <p><strong>Menos explotados pero importantes.</strong> Olfato, gusto y propiocepción.</p>
+                        <ul style="text-align: left; margin-top: 1rem; font-size: 0.9rem;">
+                            <li><strong>Olfato:</strong> Marketing sensorial en tiendas.</li>
+                            <li><strong>Gusto:</strong> Experiencias gastronómicas digitales.</li>
+                            <li><strong>Propiocepción:</strong> Conciencia corporal en VR.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin-top: 2rem; 
+                            border-left: 4px solid #667eea;">
+                    <p style="margin: 0; font-style: italic; color: #555;">
+                        💡 <strong>Principio de diseño:</strong> El <em>diseño multisensorial</em> crea experiencias 
+                        más ricas y memorables. Apple es maestra en esto: el sonido del "click" al tomar una foto, 
+                        la vibración al escribir en el teclado, y el brillo que se ajusta automáticamente crean 
+                        una experiencia cohesiva.
+                    </p>
+                </div>
             </div>
         </article>
+
+        <!-- Artículo: Memoria Humana -->
+        <article class="blog-post">
+            <h2>🧠 La Memoria Humana en el Diseño de Interfaces</h2>
+            <div class="content">
+                <p>
+                    La <strong>memoria humana</strong> es uno de los factores más críticos en IHC. No podemos 
+                    diseñar interfaces efectivas sin entender cómo recordamos y olvidamos información.
+                </p>
+
+                <h3 style="color: #764ba2; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.4rem;">
+                    📦 Tipos de Memoria
+                </h3>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0;">
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px;
+                                border: 2px solid rgba(102, 126, 234, 0.3);">
+                        <h4 style="color: #667eea; margin-bottom: 1rem; font-size: 1.2rem;">
+                            ⚡ Memoria a Corto Plazo (MCP)
+                        </h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 0.8rem;">
+                            También llamada <strong>memoria operativa o de trabajo</strong>. Es donde procesamos 
+                            información activamente.
+                        </p>
+                        <ul style="font-size: 0.9rem; color: #555;">
+                            <li><strong>Capacidad:</strong> 7±2 elementos (Ley de Miller)</li>
+                            <li><strong>Duración:</strong> 15-30 segundos sin repetición</li>
+                            <li><strong>Función:</strong> Mantener información temporal para procesarla</li>
+                        </ul>
+                        <div style="background: rgba(255,255,255,0.8); 
+                                    padding: 1rem; 
+                                    border-radius: 8px; 
+                                    margin-top: 1rem;">
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                                <strong>Implicación en diseño:</strong> No sobrecargues menús con más de 7 opciones. 
+                                Agrupa información en "chunks" (fragmentos) para facilitar el procesamiento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(118, 75, 162, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px;
+                                border: 2px solid rgba(118, 75, 162, 0.3);">
+                        <h4 style="color: #764ba2; margin-bottom: 1rem; font-size: 1.2rem;">
+                            💾 Memoria a Largo Plazo (MLP)
+                        </h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 0.8rem;">
+                            Almacena conocimientos, experiencias y habilidades de forma permanente.
+                        </p>
+                        <ul style="font-size: 0.9rem; color: #555;">
+                            <li><strong>Capacidad:</strong> Prácticamente ilimitada</li>
+                            <li><strong>Duración:</strong> Puede durar toda la vida</li>
+                            <li><strong>Función:</strong> Almacenar conocimiento y experiencias pasadas</li>
+                        </ul>
+                        <div style="background: rgba(255,255,255,0.8); 
+                                    padding: 1rem; 
+                                    border-radius: 8px; 
+                                    margin-top: 1rem;">
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                                <strong>Implicación en diseño:</strong> Usa patrones familiares (ej: icono de disquete 
+                                para "guardar"). La consistencia ayuda a formar memoria muscular.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="color: #3498db; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.4rem;">
+                    🎯 Leyes de la Memoria aplicadas al Diseño
+                </h3>
+
+                <ol style="font-size: 1.05rem; line-height: 1.8; color: #555;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #667eea;">Efecto de Primacía:</strong> Recordamos mejor lo primero 
+                        que vemos. <em>Coloca la información más importante al inicio.</em>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #764ba2;">Efecto de Recencia:</strong> También recordamos lo último. 
+                        <em>Los CTAs (Call to Action) al final de una página son efectivos.</em>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #3498db;">Chunking (Agrupación):</strong> Agrupar información facilita 
+                        su recuerdo. <em>Ejemplo: números de teléfono (123) 456-7890.</em>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: #e74c3c;">Interferencia:</strong> Nueva información puede sobrescribir 
+                        la antigua. <em>Usa confirmaciones para acciones destructivas.</em>
+                    </li>
+                </ol>
+
+                <div style="background: rgba(52, 152, 219, 0.1); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin-top: 2rem; 
+                            border-left: 4px solid #3498db;">
+                    <p style="margin: 0; font-weight: 600; color: #3498db; font-size: 1.1rem;">
+                        🔬 Caso de estudio: Google Search
+                    </p>
+                    <p style="margin-top: 0.8rem; margin-bottom: 0; color: #555;">
+                        Google mantiene una interfaz minimalista para reducir la carga cognitiva. Una sola caja 
+                        de búsqueda aprovecha la Ley de Miller (menos opciones = menos carga en MCP) y permite 
+                        que el usuario se concentre en una única tarea.
+                    </p>
+                </div>
+            </div>
+        </article>
+
     </div>
 
-    <footer>
+    <!-- Footer -->
+        <footer>
         <h3>Integrantes del Grupo (4)</h3>
         <p>1. Apellido, Nombre</p>
         <p>2. Apellido, Nombre</p>
         <p>3. Apellido, Nombre</p>
         <p>4. Apellido, Nombre</p>
         <p class="date">Fecha de entrega: 3 de diciembre 2025</p>
+        
+        
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="font-size: 0.9rem; color: #bdc3c7;">
+                💜 Hecho con pasión por estudiantes de IHC | 
+                Universidad [Tu Universidad]
+            </p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

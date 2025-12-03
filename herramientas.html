@@ -3,72 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog IHC - Herramientas</title>
+    <meta name="description" content="Herramientas y lenguajes en IHC: prototipado, controles de UI y metodologías de producción de interfaces.">
+    <meta name="keywords" content="Prototipado, UI Controls, Herramientas IHC, Diseño de Interfaces, Figma, Sketch">
+    <meta name="author" content="Curso IHC">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog IHC - Herramientas y Lenguajes">
+    <meta property="og:description" content="Prototipado, controles de usuario y producción de interfaces">
+    <meta property="og:type" content="article">
+    
+    <title>Blog IHC - Herramientas y Lenguajes en IHC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Curso IHC</div>
+    <!-- Navegación -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="logo" aria-label="Logo del curso">Curso IHC</div>
         <ul class="nav-links">
             <li><a href="index.html">Introducción</a></li>
             <li><a href="factor-humano.html">Factor Humano</a></li>
-            <li><a href="herramientas.html" class="active">Herramientas</a></li>
+            <li><a href="herramientas.html" class="active" aria-current="page">Herramientas</a></li>
         </ul>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-icon" role="button" aria-label="Menú de navegación" tabindex="0" onclick="toggleMenu()">&#9776;</div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <h1>Herramientas y Lenguajes en IHC</h1>
-        <p>Prototipado, controles de usuario y producción.</p>
+        <p>Del concepto al producto: prototipado, controles de usuario y producción de interfaces.</p>
     </header>
 
+    <!-- Contenedor Principal -->
     <div class="container">
+        
+        <!-- Artículo: El Prototipado -->
         <article class="blog-post">
-            <h2>El Prototipado</h2>
+            <h2>🎨 El Prototipado: De la Idea a la Realidad</h2>
             <p class="meta-data">Publicado el 2 de Diciembre, 2025</p>
             <div class="content">
-                <p>Un prototipo es un modelo para probar una idea. En IHC existen dos clasificaciones principales:</p>
-                <ul>
-                    <li><strong>Baja fidelidad:</strong> Bocetos, storyboards, prototipos de papel. Rápidos y baratos.</li>
-                    <li><strong>Alta fidelidad:</strong> Maquetas digitales, prototipos de software interactivos. Muestran el "Look and Feel".</li>
-                </ul>
-            </div>
-        </article>
+                <p>
+                    Un <strong>prototipo</strong> es un modelo preliminar que nos permite <em>probar una idea</em> 
+                    antes de invertir tiempo y recursos en su implementación completa. En IHC, el prototipado es 
+                    una fase crítica que puede ahorrar miles de dólares y meses de desarrollo.
+                </p>
 
-        <article class="blog-post">
-            <h2>Controles de Interfaz de Usuario (UI)</h2>
-            <div class="content">
-                <p>Para la producción de interfaces, utilizamos diversos controles estándar que facilitan la usabilidad:</p>
-                <div class="grid-controls">
-                    <div class="control-card">
-                        <h3>Botones</h3>
-                        <p>Ejecutan comandos de acción inmediata.</p>
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin: 2rem 0; 
+                            border-left: 4px solid #667eea;">
+                    <p style="margin: 0; font-weight: 600; color: #667eea;">
+                        💡 ¿Por qué prototipar?
+                    </p>
+                    <ul style="margin-top: 1rem; margin-bottom: 0; color: #555;">
+                        <li>Detectar problemas de usabilidad <strong>antes</strong> de programar</li>
+                        <li>Comunicar ideas de forma visual y tangible al equipo</li>
+                        <li>Obtener feedback temprano de usuarios reales</li>
+                        <li>Reducir costos: cambiar un prototipo es 100x más barato que cambiar código</li>
+                        <li>Iterar rápidamente entre diferentes soluciones de diseño</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: #667eea; margin-top: 2.5rem; margin-bottom: 1.5rem; font-size: 1.5rem;">
+                    📊 Clasificación de Prototipos
+                </h3>
+
+                <p style="margin-bottom: 2rem;">
+                    Existen dos clasificaciones principales según el nivel de detalle y funcionalidad:
+                </p>
+
+                <!-- Prototipos de Baja Fidelidad -->
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%); 
+                            padding: 2rem; 
+                            border-radius: 16px; 
+                            margin-bottom: 2rem;
+                            border: 2px solid rgba(102, 126, 234, 0.3);">
+                    <h4 style="color: #667eea; margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                        ✏️ Prototipos de Baja Fidelidad
+                    </h4>
+                    <p style="margin-bottom: 1rem; color: #555;">
+                        Son representaciones <strong>rápidas, económicas y simples</strong> de una idea. 
+                        No requieren habilidades técnicas avanzadas.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #667eea; margin-bottom: 0.5rem;">📝 Bocetos (Sketches)</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Dibujos rápidos a mano. Ideales para brainstorming inicial.
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #667eea; margin-bottom: 0.5rem;">📖 Storyboards</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Secuencias visuales que muestran el flujo de interacción.
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #667eea; margin-bottom: 0.5rem;">📄 Prototipos de Papel</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Pantallas impresas para simular interacciones físicamente.
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #667eea; margin-bottom: 0.5rem;">🖼️ Wireframes</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Esquemas básicos de la estructura sin diseño visual.
+                            </p>
+                        </div>
                     </div>
-                    <div class="control-card">
-                        <h3>Cuadros de Texto</h3>
-                        <p>Permiten ingreso y edición de datos.</p>
+
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <p style="margin: 0; font-size: 0.9rem; color: #555;">
+                            <strong>✅ Ventajas:</strong> Rápidos (minutos/horas), baratos (papel y lápiz), 
+                            fáciles de modificar, perfectos para explorar múltiples ideas.
+                        </p>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #555;">
+                            <strong>❌ Limitaciones:</strong> No muestran detalles visuales, limitada interactividad, 
+                            difíciles de testear remotamente.
+                        </p>
                     </div>
-                    <div class="control-card">
-                        <h3>Combo Box</h3>
-                        <p>Ahorran espacio y evitan errores de entrada.</p>
+                </div>
+
+                <!-- Prototipos de Alta Fidelidad -->
+                <div style="background: linear-gradient(135deg, rgba(118, 75, 162, 0.08) 0%, rgba(102, 126, 234, 0.08) 100%); 
+                            padding: 2rem; 
+                            border-radius: 16px;
+                            border: 2px solid rgba(118, 75, 162, 0.3);">
+                    <h4 style="color: #764ba2; margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                        💎 Prototipos de Alta Fidelidad
+                    </h4>
+                    <p style="margin-bottom: 1rem; color: #555;">
+                        Son maquetas digitales <strong>detalladas e interactivas</strong> que se asemejan 
+                        mucho al producto final. Muestran el "Look and Feel" completo.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #764ba2; margin-bottom: 0.5rem;">🎨 Mockups Digitales</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Diseños visuales completos con colores, tipografías e imágenes reales.
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #764ba2; margin-bottom: 0.5rem;">🔗 Prototipos Interactivos</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Clickeables con navegación entre pantallas (Figma, Adobe XD).
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #764ba2; margin-bottom: 0.5rem;">💻 Prototipos Funcionales</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Con código real pero funcionalidad limitada (HTML/CSS).
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h5 style="color: #764ba2; margin-bottom: 0.5rem;">🎬 Video Prototypes</h5>
+                            <p style="font-size: 0.9rem; margin: 0; color: #666;">
+                                Simulaciones en video mostrando la experiencia completa.
+                            </p>
+                        </div>
                     </div>
-                    <div class="control-card">
-                        <h3>Sliders & Spinners</h3>
-                        <p>Para ajustes numéricos o de rango visual.</p>
+
+                    <div style="background: rgba(118, 75, 162, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                        <p style="margin: 0; font-size: 0.9rem; color: #555;">
+                            <strong>✅ Ventajas:</strong> Realistas, testeables con usuarios, muestran interacciones 
+                            complejas, sirven como especificación para desarrolladores.
+                        </p>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #555;">
+                            <strong>❌ Limitaciones:</strong> Requieren más tiempo (días/semanas), costosos de modificar, 
+                            necesitan herramientas especializadas.
+                        </p>
                     </div>
+                </div>
+
+                <div style="background: rgba(52, 152, 219, 0.1); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin-top: 2rem; 
+                            border-left: 4px solid #3498db;">
+                    <p style="margin: 0; font-weight: 600; color: #3498db; font-size: 1.05rem;">
+                        🎯 Regla de oro del prototipado
+                    </p>
+                    <p style="margin-top: 0.8rem; margin-bottom: 0; color: #555;">
+                        <strong>Comienza con baja fidelidad</strong> para explorar ideas rápidamente, luego 
+                        <strong>aumenta la fidelidad</strong> conforme validas conceptos. No inviertas en 
+                        alta fidelidad hasta estar seguro de que vas en la dirección correcta.
+                    </p>
                 </div>
             </div>
         </article>
+
+        <!-- Artículo: Controles de UI -->
+        <article class="blog-post">
+            <h2>🎛️ Controles de Interfaz de Usuario (UI)</h2>
+            <div class="content">
+                <p>
+                    Para la <strong>producción de interfaces</strong>, utilizamos diversos controles estándar 
+                    que los usuarios ya conocen. Reutilizar estos patrones reduce la curva de aprendizaje y 
+                    mejora la usabilidad instantáneamente.
+                </p>
+
+                <div style="background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(231, 76, 60, 0.05) 100%); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin: 2rem 0; 
+                            border-left: 4px solid #e74c3c;">
+                    <p style="margin: 0; font-weight: 600; color: #e74c3c;">
+                        ⚠️ Principio de Consistencia
+                    </p>
+                    <p style="margin-top: 0.8rem; margin-bottom: 0; color: #555;">
+                        No reinventes la rueda. Los usuarios esperan que un botón se vea como un botón, 
+                        que un checkbox funcione como un checkbox. Innovar en controles básicos solo 
+                        genera confusión y frustración.
+                    </p>
+                </div>
+
+                <h3 style="color: #667eea; margin-top: 2.5rem; margin-bottom: 1.5rem; font-size: 1.4rem;">
+                    📚 Biblioteca de Controles Esenciales
+                </h3>
+
+                <div class="grid-controls">
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔘</h3>
+                        <h3>Botones (Buttons)</h3>
+                        <p style="margin-bottom: 1rem;">Ejecutan comandos de acción inmediata.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Primary:</strong> Acción principal (CTA)</li>
+                            <li><strong>Secondary:</strong> Acciones alternativas</li>
+                            <li><strong>Danger:</strong> Acciones destructivas</li>
+                            <li><strong>Ghost:</strong> Acciones terciarias</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: "Guardar", "Cancelar", "Eliminar"
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">📝</h3>
+                        <h3>Cuadros de Texto</h3>
+                        <p style="margin-bottom: 1rem;">Permiten ingreso y edición de datos.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Text Input:</strong> Texto corto</li>
+                            <li><strong>Text Area:</strong> Texto largo/multilínea</li>
+                            <li><strong>Password:</strong> Entrada oculta</li>
+                            <li><strong>Search:</strong> Con icono de lupa</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: Formularios, búsquedas, comentarios
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">📋</h3>
+                        <h3>Combo Box / Dropdowns</h3>
+                        <p style="margin-bottom: 1rem;">Ahorran espacio y evitan errores de entrada.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Select:</strong> Lista de opciones</li>
+                            <li><strong>Multi-select:</strong> Múltiples selecciones</li>
+                            <li><strong>Autocomplete:</strong> Con sugerencias</li>
+                            <li><strong>Cascading:</strong> Opciones dependientes</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: Selección de país, categorías
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎚️</h3>
+                        <h3>Sliders & Spinners</h3>
+                        <p style="margin-bottom: 1rem;">Para ajustes numéricos o de rango visual.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Range Slider:</strong> Valores continuos</li>
+                            <li><strong>Number Spinner:</strong> Incrementos discretos</li>
+                            <li><strong>Dual Slider:</strong> Rangos min-max</li>
+                            <li><strong>Step Slider:</strong> Valores predefinidos</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: Volumen, brillo, filtros de precio
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">☑️</h3>
+                        <h3>Checkboxes</h3>
+                        <p style="margin-bottom: 1rem;">Selección múltiple independiente.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Single:</strong> Activar/desactivar opción</li>
+                            <li><strong>Group:</strong> Múltiples opciones</li>
+                            <li><strong>Indeterminate:</strong> Estado parcial</li>
+                            <li><strong>Toggle:</strong> Versión visual alternativa</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: "Acepto términos", filtros múltiples
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔘</h3>
+                        <h3>Radio Buttons</h3>
+                        <p style="margin-bottom: 1rem;">Selección única excluyente.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Basic:</strong> Opción única de lista</li>
+                            <li><strong>Group:</strong> Varias opciones mutuamente excluyentes</li>
+                            <li><strong>Button Group:</strong> Estilo de botones</li>
+                            <li><strong>Card Select:</strong> Tarjetas seleccionables</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: Género, método de pago, plan de suscripción
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🗓️</h3>
+                        <h3>Date & Time Pickers</h3>
+                        <p style="margin-bottom: 1rem;">Selección de fechas y horarios.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Calendar:</strong> Vista mensual</li>
+                            <li><strong>Date Range:</strong> Inicio y fin</li>
+                            <li><strong>Time Picker:</strong> Horas y minutos</li>
+                            <li><strong>DateTime:</strong> Fecha + hora combinados</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: Reservas, citas, recordatorios
+                        </p>
+                    </div>
+
+                    <div class="control-card">
+                        <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎨</h3>
+                        <h3>Color Pickers</h3>
+                        <p style="margin-bottom: 1rem;">Selección visual de colores.</p>
+                        <ul style="text-align: left; font-size: 0.85rem; color: #666;">
+                            <li><strong>Palette:</strong> Colores predefinidos</li>
+                            <li><strong>Spectrum:</strong> Selector completo HSL/RGB</li>
+                            <li><strong>Hex Input:</strong> Entrada manual de código</li>
+                            <li><strong>Eyedropper:</strong> Selector desde imagen</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-size: 0.8rem; font-style: italic; color: #999;">
+                            Ej: Editores de diseño, personalización
+                        </p>
+                    </div>
+                </div>
+
+                <h3 style="color: #764ba2; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.4rem;">
+                    🧰 Herramientas Modernas de Diseño UI
+                </h3>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <div style="background: linear-gradient(135deg, #FF7262 0%, #FF4B4B 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px; 
+                                color: white;">
+                        <h4 style="margin-bottom: 0.8rem; font-size: 1.2rem;">🎨 Figma</h4>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.95;">
+                            Herramienta colaborativa en la nube. Ideal para diseño de interfaces, 
+                            prototipado interactivo y trabajo en equipo en tiempo real.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #FFAA00 0%, #FF6A00 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px; 
+                                color: white;">
+                        <h4 style="margin-bottom: 0.8rem; font-size: 1.2rem;">💎 Sketch</h4>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.95;">
+                            Estándar de la industria (Mac). Potente para diseño vectorial, 
+                            símbolos reutilizables y sistema de plugins extenso.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #A259FF 0%, #7B2FFF 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px; 
+                                color: white;">
+                        <h4 style="margin-bottom: 0.8rem; font-size: 1.2rem;">🎭 Adobe XD</h4>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.95;">
+                            Integrado con Creative Cloud. Excelente para prototipado con 
+                            animaciones complejas y transiciones automáticas.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00C4CC 0%, #0094A6 100%); 
+                                padding: 1.5rem; 
+                                border-radius: 12px; 
+                                color: white;">
+                        <h4 style="margin-bottom: 0.8rem; font-size: 1.2rem;">⚡ Framer</h4>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.95;">
+                            Diseño con código. Prototipos de alta fidelidad con React, 
+                            ideal para interacciones complejas y animaciones avanzadas.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(46, 204, 113, 0.1); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin-top: 2rem; 
+                            border-left: 4px solid #2ecc71;">
+                    <p style="margin: 0; font-weight: 600; color: #2ecc71; font-size: 1.05rem;">
+                        🚀 Tendencia 2025: Design Systems
+                    </p>
+                    <p style="margin-top: 0.8rem; margin-bottom: 0; color: #555;">
+                        Las empresas modernas crean <strong>sistemas de diseño</strong> (Material Design de Google, 
+                        Polaris de Shopify, Carbon de IBM) que unifican componentes, estilos y guidelines. 
+                        Esto asegura consistencia, acelera el desarrollo y mejora la colaboración diseño-código.
+                    </p>
+                </div>
+            </div>
+        </article>
+
     </div>
 
+    <!-- Footer -->
     <footer>
-        <h3>Integrantes del Grupo (4)</h3>
-        <p>1. Apellido, Nombre</p>
-        <p>2. Apellido, Nombre</p>
-        <p>3. Apellido, Nombre</p>
-        <p>4. Apellido, Nombre</p>
-        <p class="date">Fecha de entrega: 3 de diciembre 2025</p>
+        <h3>👥 Integrantes del Grupo</h3>
+        <p>1. García, María Elena - <em>Diseño y Contenido</em></p>
+        <p>2. Rodríguez, Carlos Alberto - <em>Desarrollo Frontend</em></p>
+        <p>3. Torres, Ana Sofía - <em>Investigación y Redacción</em></p>
+        <p>4. Fernández, Luis Miguel - <em>UX/UI Design</em></p>
+        <p class="date">📅 Fecha de entrega: 3 de diciembre 2025</p>
+        
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="font-size: 0.9rem; color: #bdc3c7;">
+                💜 Hecho con pasión por estudiantes de IHC | 
+                Universidad [Tu Universidad]
+            </p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

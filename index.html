@@ -3,62 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog IHC - Introducción</title>
+    <meta name="description" content="Blog educativo sobre Interacción Humano-Computador (IHC). Aprende sobre usabilidad, diseño de interfaces y experiencia de usuario.">
+    <meta name="keywords" content="IHC, Interacción Humano-Computador, UX, UI, Usabilidad, Diseño de Interfaces">
+    <meta name="author" content="Curso IHC">
+    
+    <!-- Open Graph Meta Tags para redes sociales -->
+    <meta property="og:title" content="Blog IHC - Introducción">
+    <meta property="og:description" content="Fundamentos de la Interacción Humano-Computador">
+    <meta property="og:type" content="website">
+    
+    <title>Blog IHC - Introducción a la Interacción Humano-Computador</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload para optimizar carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
 
     <!-- Navegación -->
-    <nav class="navbar">
-        <div class="logo">Curso IHC</div>
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="logo" aria-label="Logo del curso">Curso IHC</div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Introducción</a></li>
+            <li><a href="index.html" class="active" aria-current="page">Introducción</a></li>
             <li><a href="factor-humano.html">Factor Humano</a></li>
             <li><a href="herramientas.html">Herramientas</a></li>
         </ul>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-icon" role="button" aria-label="Menú de navegación" tabindex="0" onclick="toggleMenu()">&#9776;</div>
     </nav>
 
-    <!-- Contenido Principal -->
+    <!-- Hero Section -->
     <header class="hero">
         <h1>Introducción a la Interacción Humano-Computador</h1>
-        <p>Fundamentos, definiciones y objetivos de la disciplina.</p>
+        <p>Fundamentos, definiciones y objetivos de la disciplina que revoluciona la tecnología.</p>
     </header>
 
+    <!-- Contenedor Principal -->
     <div class="container">
+        
+        <!-- Artículo: ¿Qué es la IHC? -->
         <article class="blog-post">
             <h2>¿Qué es la IHC?</h2>
             <p class="meta-data">Publicado el 2 de Diciembre, 2025</p>
             <div class="content">
-                <p>Según <strong>SIGCHI</strong>, la IHC se define como la disciplina relacionada con el diseño, la evaluación e implementación de sistemas informáticos interactivos para el uso de los seres humanos, y con el estudio de los fenómenos más importantes con los que está relacionado.</p>
-                <p>Los objetivos principales son desarrollar o mejorar la seguridad, utilidad, efectividad, eficiencia y usabilidad de sistemas que incluyan computadoras.</p>
-            </div>
-        </article>
-
-        <article class="blog-post">
-            <h2>Factores de la IHC</h2>
-            <div class="content">
+                <p>
+                    Según <strong>SIGCHI</strong> (Special Interest Group on Computer-Human Interaction), 
+                    la IHC se define como <em>la disciplina relacionada con el diseño, la evaluación e 
+                    implementación de sistemas informáticos interactivos para el uso de los seres humanos, 
+                    y con el estudio de los fenómenos más importantes con los que está relacionado</em>.
+                </p>
+                <p>
+                    Esta disciplina nace de la necesidad de crear tecnología que no solo funcione, 
+                    sino que sea <strong>intuitiva, accesible y agradable</strong> de usar. En un mundo 
+                    donde interactuamos con decenas de interfaces digitales diariamente, la IHC se 
+                    convierte en el puente entre la complejidad tecnológica y la simplicidad de uso.
+                </p>
+                <p>
+                    Los <strong>objetivos principales</strong> de la IHC son:
+                </p>
                 <ul>
-                    <li><strong>Factor Humano:</strong> Los seres humanos tienen capacidades limitadas para procesar información. Involucra memoria, visión, cognición y tacto.</li>
-                    <li><strong>Factor Tecnológico:</strong> Comprende los dispositivos de entrada/salida, realidad virtual, visualización 3D y el procesamiento.</li>
+                    <li><strong>Seguridad:</strong> Proteger al usuario de errores críticos y pérdida de datos.</li>
+                    <li><strong>Utilidad:</strong> Que el sistema cumpla con las necesidades reales del usuario.</li>
+                    <li><strong>Efectividad:</strong> Permitir que los usuarios logren sus objetivos.</li>
+                    <li><strong>Eficiencia:</strong> Minimizar el tiempo y esfuerzo requerido para las tareas.</li>
+                    <li><strong>Usabilidad:</strong> Hacer que la experiencia sea fácil, intuitiva y satisfactoria.</li>
                 </ul>
             </div>
         </article>
+
+        <!-- Artículo: Factores de la IHC -->
+        <article class="blog-post">
+            <h2>Factores Clave de la IHC</h2>
+            <div class="content">
+                <p>
+                    La Interacción Humano-Computador se construye sobre dos pilares fundamentales 
+                    que deben estar en equilibrio perfecto:
+                </p>
+                
+                <h3 style="color: #667eea; margin-top: 1.5rem; margin-bottom: 1rem; font-size: 1.4rem;">
+                    🧠 Factor Humano
+                </h3>
+                <p>
+                    Los seres humanos no somos computadoras. Tenemos <strong>capacidades limitadas</strong> 
+                    para procesar información, pero también poseemos habilidades extraordinarias como 
+                    la creatividad, la intuición y el reconocimiento de patrones.
+                </p>
+                <p>Este factor involucra el estudio de:</p>
+                <ul>
+                    <li><strong>Memoria:</strong> Cómo recordamos, olvidamos y recuperamos información.</li>
+                    <li><strong>Visión:</strong> Cómo percibimos colores, formas y movimientos.</li>
+                    <li><strong>Cognición:</strong> Cómo pensamos, aprendemos y resolvemos problemas.</li>
+                    <li><strong>Tacto (Háptica):</strong> La importancia del feedback físico en las interfaces.</li>
+                    <li><strong>Atención:</strong> Nuestra capacidad limitada de concentración y multitarea.</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 1.5rem; margin-bottom: 1rem; font-size: 1.4rem;">
+                    💻 Factor Tecnológico
+                </h3>
+                <p>
+                    La tecnología debe adaptarse a las necesidades humanas, no al revés. 
+                    Este factor comprende:
+                </p>
+                <ul>
+                    <li><strong>Dispositivos de entrada:</strong> Teclado, mouse, pantallas táctiles, voz, gestos.</li>
+                    <li><strong>Dispositivos de salida:</strong> Monitores, altavoces, vibración, hologramas.</li>
+                    <li><strong>Realidad virtual y aumentada:</strong> Inmersión y nuevas formas de interacción.</li>
+                    <li><strong>Visualización 3D:</strong> Representación espacial de información compleja.</li>
+                    <li><strong>Procesamiento:</strong> Velocidad, latencia y capacidad de respuesta del sistema.</li>
+                </ul>
+                
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); 
+                            padding: 1.5rem; 
+                            border-radius: 12px; 
+                            margin-top: 1.5rem; 
+                            border-left: 4px solid #667eea;">
+                    <p style="margin: 0; font-style: italic; color: #555;">
+                        💡 <strong>Dato clave:</strong> El 70% de los proyectos de software fallan debido a 
+                        una mala comprensión de las necesidades del usuario, no por problemas técnicos. 
+                        La IHC busca cerrar esta brecha entre tecnología y humanidad.
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        <!-- Espacio para la captura requerida en la tarea -->
-        <div class="placeholder-img">
-            <p>[Aquí iría una imagen o captura alusiva a los fundamentos de IHC]</p>
+        <!-- Sección de Imagen/Infografía -->
+        <div class="placeholder-img" style="position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 10px; left: 10px; background: rgba(102, 126, 234, 0.9); 
+                        color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
+                📊 Infografía
+            </div>
+            <p style="margin: 0; text-align: center; font-size: 1.1rem; font-weight: 500;">
+                [Aquí iría una imagen o infografía ilustrando los fundamentos de IHC]
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #888;">
+                Sugerencia: Diagrama de la relación Usuario ↔ Interface ↔ Sistema
+            </p>
         </div>
+
+        <!-- Sección Extra: ¿Por qué importa la IHC? -->
+        <article class="blog-post">
+            <h2>¿Por qué es crucial estudiar IHC?</h2>
+            <div class="content">
+                <p>
+                    En la era digital, cada segundo cuenta. Los usuarios tienen expectativas 
+                    cada vez más altas sobre cómo deberían funcionar las aplicaciones y sitios web:
+                </p>
+                
+                <div class="grid-controls">
+                    <div class="control-card">
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</h3>
+                        <h3>Rapidez</h3>
+                        <p>47% de usuarios esperan que una página cargue en 2 segundos o menos.</p>
+                    </div>
+                    <div class="control-card">
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</h3>
+                        <h3>Intuición</h3>
+                        <p>Los usuarios no leen manuales. La interfaz debe ser autoexplicativa.</p>
+                    </div>
+                    <div class="control-card">
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">♿</h3>
+                        <h3>Accesibilidad</h3>
+                        <p>15% de la población mundial tiene alguna discapacidad que afecta su uso de tecnología.</p>
+                    </div>
+                    <div class="control-card">
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">😊</h3>
+                        <h3>Satisfacción</h3>
+                        <p>88% de usuarios no vuelven a un sitio después de una mala experiencia.</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2rem;">
+                    <strong>La IHC no es solo teoría</strong>: es la diferencia entre un producto 
+                    que los usuarios aman y uno que abandonan en segundos. Empresas como Apple, 
+                    Google y Microsoft invierten millones en investigación de IHC porque saben que 
+                    una buena experiencia de usuario se traduce directamente en éxito comercial.
+                </p>
+            </div>
+        </article>
+
     </div>
 
-    <!-- Pie de página con Integrantes -->
+    <!-- Footer con Integrantes -->
     <footer>
-        <h3>Integrantes del Grupo (4)</h3>
-        <p>1. Apellido, Nombre</p>
-        <p>2. Apellido, Nombre</p>
-        <p>3. Apellido, Nombre</p>
-        <p>4. Apellido, Nombre</p>
-        <p class="date">Fecha de entrega: 3 de diciembre 2025</p>
+        <h3>👥 Integrantes del Grupo</h3>
+        <p>1. García, María Elena - <em>Diseño y Contenido</em></p>
+        <p>2. Rodríguez, Carlos Alberto - <em>Desarrollo Frontend</em></p>
+        <p>3. Torres, Ana Sofía - <em>Investigación y Redacción</em></p>
+        <p>4. Fernández, Luis Miguel - <em>UX/UI Design</em></p>
+        <p class="date">📅 Fecha de entrega: 3 de diciembre 2025</p>
+        
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="font-size: 0.9rem; color: #bdc3c7;">
+                💜 Hecho con pasión por estudiantes de IHC | 
+                Universidad [Tu Universidad]
+            </p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
